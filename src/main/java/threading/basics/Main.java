@@ -24,6 +24,7 @@ public class Main {
         Thread[] allThreads = new Thread[Thread.activeCount()];
         Thread.enumerate(allThreads);
 
+
         // Print information about all active threads
         System.out.println("\nActive Threads:");
         for (Thread thread : allThreads) {

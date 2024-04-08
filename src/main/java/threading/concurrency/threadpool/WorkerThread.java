@@ -1,4 +1,4 @@
-package threading.concurrency.executor;
+package threading.concurrency.threadpool;
 
 /**
  * WorkerThread class implements the Runnable interface to define a worker thread.

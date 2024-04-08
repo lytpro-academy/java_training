@@ -1,5 +1,13 @@
 package threading.basics;
 
+/**
+ * Explanation:
+ * Daemon threads are threads that provide services to user threads or perform background tasks.
+ * They are marked as daemon threads using the setDaemon(true) method before starting the thread.
+ * Daemon threads are automatically terminated when all user threads have completed their execution and the program is about to exit. In other words, they do not prevent the JVM from exiting.
+ * Daemon threads are commonly used for tasks such as garbage collection, monitoring, or handling background services.
+ * They are meant to support and complement the execution of user threads without keeping the program alive unnecessarily.
+ * */
 public class DaemonThread extends Thread
 {
     public DaemonThread(String name){

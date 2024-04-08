@@ -1,4 +1,4 @@
-package threading.synchronisation.basics.requirement;
+package threading.synchronisation.basics.concept;
 
 /**
  * Main class creates a Manager object and two threads to demonstrate synchronization.

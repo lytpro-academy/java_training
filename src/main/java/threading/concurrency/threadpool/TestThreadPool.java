@@ -1,7 +1,4 @@
-package threading.concurrency.executor;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+package threading.concurrency.threadpool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

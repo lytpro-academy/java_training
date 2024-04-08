@@ -3,6 +3,13 @@ package threading.concurrency;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+/**
+ * A BlockingQueue in Java is a queue that supports blocking operations. It extends the Queue interface and adds
+ * methods that wait for the queue to become non-empty when retrieving an element and wait for space to become
+ * available in the queue when adding an element. This blocking behavior makes BlockingQueue suitable for implementing
+ * producer-consumer scenarios and other multithreaded applications where threads need to communicate and synchronize
+ * access to shared data.
+ * */
 public class BlockingQueuePCExample {
 
     public static void main(String[] args) {
@@ -19,7 +26,6 @@ public class BlockingQueuePCExample {
     }
 
     static class Producer implements Runnable {
-
         BlockingQueue<String> queue=null;
 
         public Producer(BlockingQueue queue) {
@@ -47,7 +53,6 @@ public class BlockingQueuePCExample {
     }
 
     static class Consumer implements Runnable {
-
         BlockingQueue<String> queue=null;
 
         public Consumer(BlockingQueue queue) {

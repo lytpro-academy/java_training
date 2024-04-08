@@ -1,4 +1,4 @@
-package threading.synchronisation.basics.requirement;
+package threading.synchronisation.basics.concept;
 
 /**
  * Thread2 class extends the Thread class to define a thread that calls a method on an instance of Manager.

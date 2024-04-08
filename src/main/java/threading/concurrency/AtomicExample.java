@@ -2,29 +2,42 @@ package threading.concurrency;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+
+/**
+ * Atomic operations in multithreading refer to operations that are performed as a single, indivisible unit of
+ * execution. In other words, these operations are guaranteed to be thread-safe and appear as if they occur
+ * instantaneously from the perspective of other threads. Atomicity ensures that when multiple threads concurrently
+ * access shared data and perform atomic operations, the operations are completed without interference or race
+ * conditions, preserving data consistency and integrity.
+ *
+ *
+ * Explanation
+ * In below example, multiple threads concurrently increment an AtomicInteger counter using the incrementAndGet()
+ * method, which is an atomic operation. The use of AtomicInteger ensures that the increment operation is thread-safe,
+ * and the final value of the counter reflects the sum of increments performed by all threads.
+ * */
 public class AtomicExample {
     private static AtomicInteger counter = new AtomicInteger(0);
 
     public static void main(String[] args) {
-        // Increment counter atomically by 1
-        System.out.println("Initial value: " + counter.get());
-        counter.incrementAndGet();
-        System.out.println("Value after increment: " + counter.get());
+        // Multiple threads incrementing the counter atomically
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                for (int j = 0; j < 1000; j++) {
+                    counter.incrementAndGet(); // Atomic increment operation
+                }
+            }).start();
+        }
 
-        // Decrement counter atomically by 1
-        counter.decrementAndGet();
-        System.out.println("Value after decrement: " + counter.get());
+        // Wait for all threads to complete
+        try {
+            Thread.sleep(2000); // Wait for 2 seconds to ensure all threads finish
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        // Add a specific value atomically
-        int delta = 5;
-        counter.addAndGet(delta);
-        System.out.println("Value after adding " + delta + ": " + counter.get());
-
-        // Compare and set operation
-        int expectedValue = 5;
-        int newValue = 10;
-        boolean updated = counter.compareAndSet(expectedValue, newValue);
-        System.out.println("Value after compare and set: " + counter.get() + " (Updated: " + updated + ")");
+        // Print the final value of the counter
+        System.out.println("Final value of counter: " + counter.get());
     }
 }
 
