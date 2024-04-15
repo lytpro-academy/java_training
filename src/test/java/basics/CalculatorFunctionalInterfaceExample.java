@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * CalculatorTest class contains unit tests for the Calculator class.
  */
-class CalculatorTest {
+class CalculatorFunctionalInterfaceExample {
     // Instance variable to hold an instance of Calculator
     private static Calculator calculator = new Calculator();
 

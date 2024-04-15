@@ -1,5 +1,8 @@
 package objects.equalsAndHashcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * The Person class overrides the equals() and hashCode() methods to compare two Person objects based on their name and age.
  * We create two Person objects person1 and person2 with the same name and age.
@@ -19,9 +22,9 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
+        if (this == o) return true; // p1 == p1
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
+        Person person = (Person) o; // typecasting
         return age == person.age && name.equals(person.name);
     }
 
@@ -30,8 +33,9 @@ public class Person {
         return 31 * name.hashCode() + age;
     }
 
+
     public static void main(String[] args) {
-        Person person1 = new Person("John", 30);
+        Person person1 = new Person("John", 31);
         Person person2 = new Person("John", 30);
 
         // Equals method contract
@@ -43,5 +47,6 @@ public class Person {
         System.out.println("\nHash code contract:");
         System.out.println("person1.hashCode(): " + person1.hashCode()); // Same hash code
         System.out.println("person2.hashCode(): " + person2.hashCode()); // Same hash code
+
     }
 }
