@@ -9,5 +9,8 @@ public class DateFormatExample {
         Date currentDate = new Date();
         String formattedDate = dateFormat.format(currentDate);
         System.out.println("Formatted Date: " + formattedDate);
+
+        Date date = new Date();
+        System.out.println(date);
     }
 }

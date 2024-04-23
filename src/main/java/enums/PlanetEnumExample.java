@@ -13,6 +13,7 @@ package enums;
  * in your code.
  * */
 public class PlanetEnumExample {
+
     public static void main(String[] args) {
         Planet earth = Planet.EARTH;
         System.out.println("Earth's mass relative to Earth: " + earth.getMassRelativeToEarth());
