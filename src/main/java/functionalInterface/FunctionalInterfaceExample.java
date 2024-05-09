@@ -1,4 +1,4 @@
-package basics.functionalInterface;
+package functionalInterface;
 
 /**
  * A functional interface is an interface that contains only one abstract method. They can have only one functionality

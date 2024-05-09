@@ -1,7 +1,7 @@
 package threading.synchronisation.basics.lock;
 
 public class ObjectLevelLockExample {
-    public void objectLevelLockMethod()
+    public synchronized void objectLevelLockMethod()
     {
         synchronized (this)
         {

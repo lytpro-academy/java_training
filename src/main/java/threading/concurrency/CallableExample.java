@@ -11,6 +11,7 @@ import java.util.concurrent.Future;
  * lightweight, making it appropriate for tasks that do not require returning a result or throwing exceptions.
  */
 public class CallableExample {
+
     public static void main(String[] args) throws Exception {
         // Create an ExecutorService with a single worker thread
         ExecutorService executor = Executors.newSingleThreadExecutor();

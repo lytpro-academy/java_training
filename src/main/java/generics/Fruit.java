@@ -1,4 +1,4 @@
-package basics.generics;
+package generics;
 
 public class Fruit {
     private String name;

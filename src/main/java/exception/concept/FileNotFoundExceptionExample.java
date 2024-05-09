@@ -8,11 +8,7 @@ public class FileNotFoundExceptionExample {
 
     public void getFileDetails() throws FileNotFoundException {
         File file = new File("sdsd");
-        try {
-            FileReader reader = new FileReader(file);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        FileReader reader = new FileReader(file);
     }
 
     public void readFile() {

@@ -1,4 +1,4 @@
-package basics.functionalInterface;
+package functionalInterface;
 
 @FunctionalInterface
 public interface Square {

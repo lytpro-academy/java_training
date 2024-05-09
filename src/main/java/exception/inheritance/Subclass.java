@@ -3,7 +3,7 @@ package exception.inheritance;
 public class Subclass extends Superclass {
     // Overriding the method from superclass
     @Override
-    public void readFile() throws java.io.FileNotFoundException {
+    public void readFile() throws java.io.IOException {
         // Read file operation with potential FileNotFoundException
         throw new java.io.FileNotFoundException("FileNotFoundException occurred in Subclass");
     }

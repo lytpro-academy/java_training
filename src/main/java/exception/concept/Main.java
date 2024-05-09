@@ -9,13 +9,13 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello USA");
-
+            int j=0;
         try {
             System.out.println("Inside try block before exception");
-            int i = 10/0;
+            int i = 10/j;
             System.out.println("Inside try block after exception");
         }
-        catch (NullPointerException ex){
+        catch (ArithmeticException ex){
             System.out.println("Inside catch block after exception");
             ex.printStackTrace();
         }

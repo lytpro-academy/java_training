@@ -4,7 +4,7 @@ public class FinallyBlock {
     public static void main(String args[]){
         try{
             //below code do not throw any exception
-            int data=25/5;
+            int data=25/0;
             System.out.println(data);
         }
         //catch won't be executed

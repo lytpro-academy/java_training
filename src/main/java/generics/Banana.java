@@ -1,4 +1,4 @@
-package basics.generics;
+package generics;
 
 public class Banana extends Fruit {
     public Banana(String name) {

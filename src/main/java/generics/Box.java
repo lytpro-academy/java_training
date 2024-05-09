@@ -1,4 +1,4 @@
-package basics.generics;
+package generics;
 
 /**
  * We define a generic class Box<T> that can hold a value of any type T.
