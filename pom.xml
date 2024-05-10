@@ -22,5 +22,11 @@
             <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
+        <!-- OpenCSV dependency -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.5.2</version>
+        </dependency>
     </dependencies>
 </project>

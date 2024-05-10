@@ -1,4 +1,4 @@
-package basics;
+package functionalInterface.lambda;
 
 /***
  * Java 8 brought a powerful new syntactic improvement in the form of lambda expressions. A lambda is an anonymous

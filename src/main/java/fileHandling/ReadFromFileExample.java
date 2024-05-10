@@ -8,7 +8,8 @@ public class ReadFromFileExample {
     public static void main(String[] args) {
         try {
             // Specify the file path
-            BufferedReader reader = new BufferedReader(new FileReader("example.txt"));
+            FileReader fileReader = new FileReader("example.txt");
+            BufferedReader reader = new BufferedReader(fileReader);
 
             // Read data from the file
             String line;

@@ -13,7 +13,7 @@ public class StreamFlatMapExample {
 
         List<Integer> flattenedList = numbers.stream()
                 .flatMap(List::stream)
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("Flattened list: " + flattenedList);
     }
 }

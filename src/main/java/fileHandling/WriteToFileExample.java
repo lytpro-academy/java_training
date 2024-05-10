@@ -8,7 +8,8 @@ public class WriteToFileExample {
         PrintWriter writer = null;
         try {
             // Specify the file path
-            writer = new PrintWriter(new FileWriter("example.txt"));
+            FileWriter fileWriter = new FileWriter("example.txt");
+            writer = new PrintWriter(fileWriter);
 
             // Write data to the file
             writer.println("Hello, World!");
