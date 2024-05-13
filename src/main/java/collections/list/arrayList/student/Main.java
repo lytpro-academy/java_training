@@ -15,6 +15,8 @@ public class Main {
 
         List<Student> al2= Arrays.asList(s1,s2,s3);
 
+        System.out.println(al);
+
         for (Student st:al){
             System.out.printf("Id is %s, and name is %s, and age is %s%n", st.Id, st.name, st.age);
         }

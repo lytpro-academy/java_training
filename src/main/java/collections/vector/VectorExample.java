@@ -1,4 +1,4 @@
-package collections;
+package collections.vector;
 import java.util.*;
 
 /**

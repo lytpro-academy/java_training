@@ -32,12 +32,12 @@ public class MapExample {
     public static void main(String[] args) {
         //A Map can't be traversed, so you need to convert it into Set using keySet() or entrySet() method.
         Map<Integer,String> map1=new HashMap();
-        map1.put(100,"Amit");
+        map1.put(100,"Amit");  // {[122323 ,100, Amit], [122323 ,102, Rahul] [231232, 101, vijay]}
         map1.put(101,"Vijay");
-        map1.put(102,"Rahul");
+        map1.put(102,"Rahul"); //
         map1.put(100,"Ravi");
 
-        map1.get(105);
+        map1.get(102);  //122323    102.equals(102)
 
         //Elements can traverse in any order
         for(Map.Entry m:map1.entrySet()){

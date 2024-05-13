@@ -22,5 +22,13 @@ public class StreamDistinctExample {
         numbers.stream()
                 .distinct()
                 .forEach(System.out::println);
+
+
+        String str = "aaa bbb ccc ddd aaa bbb ccc ddd";
+        String[] words = str.split(" "); // {"aaa", "bbb" ... "}
+        List<String> wordList = Arrays.asList(words);
+        wordList.stream().
+                distinct().
+                forEach(System.out::println);
     }
 }

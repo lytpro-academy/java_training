@@ -28,7 +28,10 @@ public class StreamExample {
         List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David", "Emma", "Frank");
 
         // Filter names starting with 'A' and convert them to uppercase
-        names.stream().filter(name -> name.startsWith("A")).map(String::toUpperCase).forEach(System.out::println);
+        names.stream().
+                filter(name -> name.startsWith("A")).
+                map(String::toUpperCase).
+                forEach(System.out::println);
 
         // Count the number of names longer than 4 characters
         long count = names.stream().filter(name -> name.length() > 4).count();
